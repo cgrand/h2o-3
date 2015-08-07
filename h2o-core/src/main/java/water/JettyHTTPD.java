@@ -170,7 +170,7 @@ public class JettyHTTPD {
 
     QueuedThreadPool p = new QueuedThreadPool();
     p.setName("jetty-h2o");
-    p.setMinThreads(3);
+    // p.setMinThreads(3);
     p.setMaxThreads(50);
     // p.setMaxIdleTimeMs(3000);
     _server.setThreadPool(p);
