@@ -172,7 +172,7 @@ public class JettyHTTPD {
     p.setName("jetty-h2o");
     p.setMinThreads(3);
     p.setMaxThreads(50);
-    p.setMaxIdleTimeMs(3000);
+    // p.setMaxIdleTimeMs(3000);
     _server.setThreadPool(p);
 
     Connector connector=new SocketConnector();
